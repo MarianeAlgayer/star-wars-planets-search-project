@@ -1,0 +1,10 @@
+#app-intro {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+#app-intro img {
+  width: 60%;
+}
