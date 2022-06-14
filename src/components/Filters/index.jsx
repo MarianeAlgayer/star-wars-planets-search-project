@@ -6,7 +6,7 @@ import FiltersList from '../FiltersList';
 
 import './style.css';
 
-function PlanetsSearch() {
+function Filters() {
   return (
     <section id="filters">
       <div id="filters-wrapper">
@@ -19,4 +19,4 @@ function PlanetsSearch() {
   );
 }
 
-export default PlanetsSearch;
+export default Filters;
