@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 
 import AppIntro from '../../components/AppIntro';
-import PlanetsSearch from '../../components/PlanetsSearch';
+import Filters from '../../components/Filters';
+import Table from '../../components/Table';
+
+import './style.css';
 
 function Home() {
   const TEN_SEC = 10000;
@@ -17,7 +20,13 @@ function Home() {
   return (
     <main>
       <AppIntro />
-      <PlanetsSearch />
+
+      <div id="planets-search">
+        <h1>Planets Search</h1>
+
+        <Filters />
+        <Table />
+      </div>
     </main>
   );
 }
