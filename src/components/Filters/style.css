@@ -1,0 +1,23 @@
+#filters-wrapper {
+  align-items: center;
+  background-color: var(--secondary-background-color);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#filters-list {
+  margin: 0 0 40px 16px;
+}
+
+.filter {
+  display: flex;
+  margin-top: 12px;
+}
