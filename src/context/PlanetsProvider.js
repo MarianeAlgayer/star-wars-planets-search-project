@@ -8,6 +8,7 @@ import filterPlanets from '../utils/filterPlanets';
 function PlanetsProvider({ children }) {
   const [planetsData, setPlanetsData] = useState([]);
   const [filterByName, setFilterByName] = useState({ name: '' });
+  const [filterByNumericValues, setFilterByNumericValues] = useState([]);
   const [filteredPlanets, setFilteredPlanets] = useState(planetsData);
 
   useEffect(() => {
@@ -18,13 +19,15 @@ function PlanetsProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    const results = filterPlanets(planetsData, filterByName);
+    const results = filterPlanets(planetsData, filterByName, filterByNumericValues);
     setFilteredPlanets(results);
-  }, [planetsData, filterByName]);
+  }, [planetsData, filterByName, filterByNumericValues]);
 
   const state = {
     filterByName,
     setFilterByName,
+    filterByNumericValues,
+    setFilterByNumericValues,
     filteredPlanets,
   };
 
