@@ -1,0 +1,20 @@
+input {
+  background-color: var(--secondary-background-color);
+  border: 1px solid var(--secondary-yellow);
+  border-radius: 4px;
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  margin: 8px 16px 0 0;
+  padding: 8px;
+  width: 200px;
+}
+
+input:hover {
+  border: 1px solid var(--yellow);
+}
+
+input:focus {
+  border: 1px solid var(--yellow);
+  outline: none;
+}
