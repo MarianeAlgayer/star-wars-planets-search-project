@@ -1,4 +1,6 @@
-# 🚧 README em construção 🚧
+# Star Wars Planets Search Project
+
+![image](app.gif)
 
 <!-- Olá, Tryber!
 
