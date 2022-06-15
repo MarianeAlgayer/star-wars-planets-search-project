@@ -37,7 +37,6 @@ function FiltersList() {
 
             <Button
               testId="button-remove-filters"
-              className="button-remove-filters"
               onClick={ removeAllFilters }
               label="REMOVE ALL FILTERS"
             />
@@ -57,7 +56,6 @@ function FiltersList() {
             </p>
 
             <Button
-              className="button-remove-filters"
               onClick={ removeFilter }
               label={ <FaTrash /> }
             />

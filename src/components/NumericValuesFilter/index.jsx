@@ -68,13 +68,13 @@ function NumericValuesFilter() {
         label="Value"
         type="number"
         value={ value }
+        name="value-filter"
         onChange={ setValue }
       />
 
       <Button
         type="submit"
         testId="button-filter"
-        className="button-filter"
         label="FILTER"
       />
     </form>
