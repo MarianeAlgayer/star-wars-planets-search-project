@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { IoPlanet } from 'react-icons/io5';
 
 import AppIntro from '../../components/AppIntro';
 import Filters from '../../components/Filters';
@@ -22,7 +23,12 @@ function Home() {
       <AppIntro />
 
       <div id="planets-search">
-        <h1>Planets Search</h1>
+        <h1>
+          Planets Search
+          {' '}
+          <IoPlanet />
+          {' '}
+        </h1>
 
         <Filters />
         <Table />
