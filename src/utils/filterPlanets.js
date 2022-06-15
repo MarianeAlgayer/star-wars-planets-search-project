@@ -8,13 +8,13 @@ const filterPlanets = (planets, { name }, numericValues) => {
 
     return acc.filter((planet) => {
       switch (comparison) {
-      case 'maior que':
+      case 'greater than':
         return Number(planet[column]) > value;
 
-      case 'menor que':
+      case 'less than':
         return Number(planet[column]) < value;
 
-      case 'igual a':
+      case 'equal to':
         return Number(planet[column]) === value;
 
       default:

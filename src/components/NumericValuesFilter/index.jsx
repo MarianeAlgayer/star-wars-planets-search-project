@@ -16,7 +16,7 @@ function NumericValuesFilter() {
   } = useContext(planetsContext);
 
   const [column, setColumn] = useState('population');
-  const [comparison, setComparison] = useState('maior que');
+  const [comparison, setComparison] = useState('greater than');
   const [value, setValue] = useState(0);
 
   const handleSubmit = (event) => {
