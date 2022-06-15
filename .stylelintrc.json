@@ -110,7 +110,7 @@
     "selector-max-pseudo-class": 3,
     "selector-max-type": 5,
     "selector-max-universal": 3,
-    "selector-no-qualifying-type": true,
+    "selector-no-qualifying-type": null,
     "selector-no-vendor-prefix": true,
     "selector-pseudo-class-case": "lower",
     "selector-pseudo-class-no-unknown": true,
