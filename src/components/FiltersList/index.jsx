@@ -4,8 +4,6 @@ import planetsContext from '../../context/planetsContext';
 
 import Button from '../Button';
 
-import './style.css';
-
 import { COLUMN_OPTIONS } from '../../utils/constants';
 
 function FiltersList() {
@@ -48,7 +46,12 @@ function FiltersList() {
 
       { filterByNumericValues
         .map((filter, index) => (
-          <div key={ index } className="filter" id={ filter.column } data-testid="filter">
+          <div
+            key={ index }
+            className="applied-filter"
+            id={ filter.column }
+            data-testid="filter"
+          >
             <p>
               {`${filter.column} | ${filter.comparison} | ${filter.value}`}
             </p>

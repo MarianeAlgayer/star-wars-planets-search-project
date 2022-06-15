@@ -2,6 +2,7 @@
   align-items: center;
   background-color: var(--secondary-background-color);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 40px;
   padding: 40px;
@@ -10,14 +11,20 @@
 form {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+label {
+  margin: 8px 0;
 }
 
 #filters-list {
   margin: 0 0 40px 16px;
 }
 
-.filter {
+.title-wrapper, .applied-filter {
+  align-items: center;
   display: flex;
   margin-top: 12px;
 }
