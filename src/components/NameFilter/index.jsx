@@ -16,6 +16,7 @@ function NameFilter() {
       label="Planet name"
       type="text"
       value={ name }
+      name="name-filter"
       onChange={ setFilterByName }
     />
   );
