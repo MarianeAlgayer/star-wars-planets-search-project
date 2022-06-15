@@ -5,11 +5,14 @@ import planetsContext from './planetsContext';
 import fetchPlanets from '../utils/fetchPlanets';
 import filterPlanets from '../utils/filterPlanets';
 
+import { COLUMN_OPTIONS } from '../utils/constants';
+
 function PlanetsProvider({ children }) {
   const [planetsData, setPlanetsData] = useState([]);
   const [filterByName, setFilterByName] = useState({ name: '' });
   const [filterByNumericValues, setFilterByNumericValues] = useState([]);
   const [filteredPlanets, setFilteredPlanets] = useState(planetsData);
+  const [columnOptions, setColumnOptions] = useState(COLUMN_OPTIONS);
 
   useEffect(() => {
     (async () => {
@@ -29,6 +32,8 @@ function PlanetsProvider({ children }) {
     filterByNumericValues,
     setFilterByNumericValues,
     filteredPlanets,
+    columnOptions,
+    setColumnOptions,
   };
 
   return (
