@@ -5,27 +5,26 @@ import Button from '../Button';
 import Select from '../Select';
 import Input from '../Input';
 
-const COLUMN_OPTIONS = [
-  'population', 'orbital_period', 'diameter', 'rotation_period', 'surface_water',
-];
-
-const COMPARISON_OPTIONS = [
-  'maior que', 'menor que', 'igual a',
-];
+import { COMPARISON_OPTIONS } from '../../utils/constants';
 
 function NumericValuesFilter() {
   const {
     filterByNumericValues,
     setFilterByNumericValues,
+    columnOptions,
+    setColumnOptions,
   } = useContext(planetsContext);
 
-  const [columnOptions, setColumnOptions] = useState(COLUMN_OPTIONS);
   const [column, setColumn] = useState('population');
   const [comparison, setComparison] = useState('maior que');
   const [value, setValue] = useState(0);
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    if (column === undefined) {
+      return;
+    }
 
     const selectedOptions = {
       column,
@@ -72,7 +71,12 @@ function NumericValuesFilter() {
         onChange={ setValue }
       />
 
-      <Button testId="button-filter" label="FILTER" />
+      <Button
+        type="submit"
+        testId="button-filter"
+        className="button-filter"
+        label="FILTER"
+      />
     </form>
   );
 }
