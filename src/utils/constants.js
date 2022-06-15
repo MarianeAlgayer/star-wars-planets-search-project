@@ -3,5 +3,5 @@ export const COLUMN_OPTIONS = [
 ];
 
 export const COMPARISON_OPTIONS = [
-  'maior que', 'menor que', 'igual a',
+  'greater than', 'less than', 'equal to',
 ];

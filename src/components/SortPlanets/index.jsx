@@ -43,7 +43,7 @@ function SortPlanets() {
         <Input
           id="column-sort-input-asc"
           testId="column-sort-input-asc"
-          label="Ascendente"
+          label="Ascending"
           type="radio"
           value="ASC"
           name="column-sort"
@@ -53,7 +53,7 @@ function SortPlanets() {
         <Input
           id="column-sort-input-desc"
           testId="column-sort-input-desc"
-          label="Descendente"
+          label="Descending"
           type="radio"
           value="DESC"
           name="column-sort"
