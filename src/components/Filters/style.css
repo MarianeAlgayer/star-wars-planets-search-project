@@ -1,11 +1,18 @@
-#filters-wrapper {
+#filters-wrapper, #sort-wrapper {
   align-items: center;
   background-color: var(--secondary-background-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
+}
+
+#filters-wrapper {
+  margin-bottom: 16px;
+}
+
+#sort-wrapper {
   margin-bottom: 40px;
-  padding: 40px;
 }
 
 form {
@@ -13,10 +20,6 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-label {
-  margin: 8px 0;
 }
 
 #filters-list {

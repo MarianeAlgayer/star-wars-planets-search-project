@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import planetsContext from './planetsContext';
 import fetchPlanets from '../utils/fetchPlanets';
 import filterPlanets from '../utils/filterPlanets';
+import sortPlanets from '../utils/sortPlanets';
 
 import { COLUMN_OPTIONS } from '../utils/constants';
 
@@ -12,12 +13,14 @@ function PlanetsProvider({ children }) {
   const [filterByName, setFilterByName] = useState({ name: '' });
   const [filterByNumericValues, setFilterByNumericValues] = useState([]);
   const [filteredPlanets, setFilteredPlanets] = useState(planetsData);
+  const [sortPlanetsOrder, setSortPlanetsOrder] = useState({ order: {} });
   const [columnOptions, setColumnOptions] = useState(COLUMN_OPTIONS);
 
   useEffect(() => {
     (async () => {
       const results = await fetchPlanets();
-      setPlanetsData(results);
+      const sortedResult = results.sort((a, b) => a.name.localeCompare(b.name));
+      setPlanetsData(sortedResult);
     })();
   }, []);
 
@@ -26,12 +29,19 @@ function PlanetsProvider({ children }) {
     setFilteredPlanets(results);
   }, [planetsData, filterByName, filterByNumericValues]);
 
+  useEffect(() => {
+    const results = sortPlanets(filteredPlanets, sortPlanetsOrder);
+    setFilteredPlanets(results);
+  }, [sortPlanetsOrder]);
+
   const state = {
     filterByName,
     setFilterByName,
     filterByNumericValues,
     setFilterByNumericValues,
     filteredPlanets,
+    sortPlanetsOrder,
+    setSortPlanetsOrder,
     columnOptions,
     setColumnOptions,
   };
