@@ -1,4 +1,4 @@
-.button-filter {
+button[ type = 'submit' ] {
   background-color: var(--secondary-background-color);
   border: 1px solid var(--secondary-yellow);
   border-radius: 4px;
@@ -6,12 +6,12 @@
   padding: 20px;
 }
 
-.button-filter:hover {
+button[ type = 'submit' ]:hover {
   background-color: var(--yellow-filter);
   border: 1px solid var(--yellow);
 }
 
-.button-remove-filters {
+button[ type = 'button' ] {
   background-color: var(--background-color);
   border: none;
   border-radius: 4px;
@@ -20,6 +20,6 @@
   padding: 8px;
 }
 
-.button-remove-filters:hover {
+button[ type = 'button' ]:hover {
   background-color: rgba(244, 67, 54, 0.222);
 }

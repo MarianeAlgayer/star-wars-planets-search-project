@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 
 import './style.css';
 
-const Button = ({ type, testId, className, onClick, label }) => (
+const Button = ({ type, testId, onClick, label }) => (
   <button
     type={ type ? 'submit' : 'button' }
     data-testid={ testId }
-    className={ className }
     onClick={ onClick }
   >
     {' '}
@@ -19,7 +18,6 @@ const Button = ({ type, testId, className, onClick, label }) => (
 Button.propTypes = {
   type: PropTypes.string.isRequired,
   testId: PropTypes.string,
-  className: PropTypes.string.isRequired,
   onClick: PropTypes.func,
   label: PropTypes.string.isRequired,
 };
