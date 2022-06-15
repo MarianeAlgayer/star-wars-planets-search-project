@@ -24,7 +24,7 @@ function Home() {
 
       <div id="planets-search">
         <h1>
-          Planets Search
+          Star Wars Planets Search
           {' '}
           <IoPlanet />
           {' '}
