@@ -12,24 +12,28 @@ HTML5, CSS3, JS ES6, React, Context API, React Hooks.
 
 - Clone the repository:
 
-```properties
+```
     git clone git@github.com:MarianeAlgayer/star-wars-planets-search-project.git
 ```
 
 - Navigate into the project directory:
 
-```properties
+```
     cd star-wars-planets-search-project
 ```
 
 - Install dependencies:
 
-```properties
+```
     npm install
 ```
 
 - Run the project:
 
-```properties
+```
     npm start
 ```
+
+## Deploy
+
+You can also access the project here: [deploy link](https://MarianeAlgayer.github.io/star-wars-planets-search-project).
