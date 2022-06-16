@@ -2,17 +2,24 @@
 
 ![image](app.gif)
 
-<!-- Olá, Tryber!
+This project is a list of planets from the Star Wars universe, which the user can search for a planet according to its characteristics.
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+## Technologies
 
-É essencial que você preencha esse documento por conta própria, ok?
+HTML5, CSS3, JS ES6, React, Context API, React Hooks.
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+## How to download and run the project
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+```bash
+    # Clone the repository
+    git clone git@github.com:MarianeAlgayer/star-wars-planets-search-project.git
 
--->
+    # Navigate into the project directory
+    cd star-wars-planets-search-project
+
+    # Install dependencies
+    npm install
+
+    # Run the project
+    npm start
+```
