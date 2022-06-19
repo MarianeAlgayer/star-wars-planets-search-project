@@ -6,7 +6,7 @@ This project is a list of planets from the Star Wars universe, which the user ca
 
 ## Technologies
 
-HTML5, CSS3, JS ES6, React, Context API, React Hooks.
+HTML, CSS, JavaScript, ReactJS, Context API, React Hooks.
 
 ## How to download and run the project
 
